@@ -14,6 +14,8 @@ description = "Advent of Code 20XX, in Python."
 authors = [
   { name = "yourname", email = "youremail@domain.tld" },
 ]
-dependencies = []
+dependencies = [
+    "requests>=2.32.3",
+]
 requires-python = ">=3.11"
 readme = "README.md"

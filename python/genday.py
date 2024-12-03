@@ -73,6 +73,7 @@ def main():
             "    Set the $AOC_SESSION environment variable to the conent of the 'session' cookie on adventofcode.com."
         )
         print("    Or, pass it to this script with the --session flag.")
+        sys.exit(1)
 
     # Check that script is run from correct directory, prevent unintended overwrites.
     if (Path.cwd().resolve() != Path(__file__).resolve().parent) and not args.force:

@@ -107,7 +107,7 @@ def main():
 
     # Create dayXX/dayXX.py file
     if not args.input_only:
-        script_path = gen_path / Path(f"day{args.day:02d}.py")
+        script_path = gen_path / Path(f"day{args.day}.py")
         if not args.force and script_path.exists():
             print(f"[!] File at path {script_path} already exists! Use --force to ignore.")
             sys.exit(1)
